@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="Semantic-UI-1.0/dist/semantic.min.css" type="text/css">
+        <link rel="stylesheet" href="css/constant.css" type="text/css">
+         <script src="js/jquery-2.1.4.min.js"></script>
+         <script src="Semantic-UI-1.0/dist/semantic.min.js"></script>
+          <link href="css/cdn.css" rel="stylesheet">
+          <title>E-HEALTH|ACTOR SELECTION PAGE</title>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            $(function(){
+                $('.ui.dropdown').dropdown();
+            });
+        </script>
+    </head>
+    <body>
+         <div id="header">
+            <h1>
+                E-HEALTH|AN INITIATIVE BY THE GOVT. OF INDIA
+                <br>
+            </h1>
+            <h4>
+                We Care For You,Care From Where You Are
+            </h4>    
+        </div>
+        
+        <div class="container1">
+            <div class="ui fluid search simple selection dropdown">
+                <input type="hidden" name="country">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Select Actor</div>
+                    <div class="menu">
+                    <div class="item" data-value="d"><i class="doctor"></i>Doctor</div>
+                    <div class="item" data-value="p"><i class="city"></i>Patient</div>
+                    <div class="item" data-value="ph"><i class="pharmacist"></i>Pharmacist</div>
+                    <div class="item" data-value="pa"><i class="pathologist"></i>Pathologist</div>
+  
+                    </div>
+            </div>
+        
+            <br> <br> <br>
+        <div class="ui button large">
+            <button class="ui  negative  button">
+                Submit
+            </button>
+        </div>
+        </div>
+    </body>
+</html>

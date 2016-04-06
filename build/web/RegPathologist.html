@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>Pathologist Register</title>
+	<!-- meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- css -->
+        <link rel="stylesheet" href="css/formstyle.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet'>
+
+	<!-- js -->
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+
+	<header>
+
+
+	</header>
+	<div class="div1">
+
+	<form class="form" action="./RegisterServlet.do" method="post" autocomplete="on" >
+	<fieldset id="fset1">
+
+
+
+		<label for="path_name">First Name:</label><br>
+		<input class="inp" placeholder="First name" name="path_first_name" type="text"
+		required />
+                <br/>
+
+		<label for="path_name">Last Name:</label><br>
+		<input class="inp" placeholder="Last name" name="path_lastname" type="text"
+		required />
+
+		<br><br>
+
+		<label for="path_mob">Phone Number:</label><br>
+		<input class="inp" placeholder="Mobile Number" name="path_mob" type="text"
+		required />
+		<br><br>
+
+		<label for="path_mail">E-mail:</label><br>
+		<input class="inp" placeholder="email id" name="path_mail" type="email"
+		required />
+		<br><br>
+		
+		<!-- drop down list -->
+		<label for="cat"></label>
+		<h4>Register as</h4>
+		<select class="form-control" id="cat" name="type">
+			<option value="user" >Citizen</option>
+			<option value="doctor">Doctor</option>
+			<option value="pharma">Pharmacist</option>			
+			<option value="patho">Pathologist</option>			
+		</select>	
+		<br/>
+		<input type="radio" name="sex" value="male">Male &nbsp &nbsp
+		<input type="radio" name="sex" value="female">Female
+                <br/>
+		
+		<label for="path_mail">Date Of Birth:</label><br>
+		<input class="inp"  name="dob" type="date"
+		required />
+		<br><br>
+		
+		<label  for="path_home">Apartment No:</label><br>
+		<input class="inp" placeholder="apartment number" name="apt_no" type="text"
+		required />
+		<br><br>
+		
+		<label  for="path_home">Street:</label><br>
+		<input class="inp" placeholder="street" name="street" type="text"
+		required />
+		<br><br>		
+
+		<label  for="path_home">City:</label><br>
+		<input class="inp" placeholder="city" name="city" type="text"
+		required />
+		<br><br>
+                
+                <label  for="path_home">State:</label><br>
+		<input class="inp" placeholder="state" name="state" type="text"
+		required />
+		<br><br>
+
+		<label  for="path_home">Zip Code:</label><br>
+		<input class="inp" placeholder="zip code" name="zip_code" type="text"
+		required />
+		<br><br>
+
+		<label  for="lab_id">Lab Registeration ID:</label><br>
+		<input class="inp" placeholder="Laboratory Registeration ID" name="lab_id" type="text"
+		required />
+		<br><br>
+
+		<label  for="lab_name">Lab Name:</label><br>
+		<input class="inp"  placeholder="Laboratory Name" name="lab_name" type="text"
+		required />
+		<br><br>
+		
+		<label  for="path_id">Lab Address:</label><br>
+		<input class="inp" placeholder="Lab Address" name="lab_add" type="text"
+		required />
+		<br><br>
+
+                <!--
+		<label  for="upload_regpatdoc">Upload Documents:</label><br>
+		<input class="inp" name="upload_regpatdoc" type="file" accept="application/pdf"
+		required />
+		<br><br>-->
+
+		<button class="btn" id="btn-patho" type="submit">Register</button>
+
+	</fieldset>
+
+
+	</div>
+
+
+	<footer>
+
+	</footer>
+</body>
+
+</html>

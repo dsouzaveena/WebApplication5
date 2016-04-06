@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="Semantic-UI-1.0/dist/semantic.min.css" type="text/css">
+        <link rel="stylesheet" href="css/constant1.css" type="text/css">
+         <script src="js/jquery-2.1.4.min.js"></script>
+          <script src="js/constant.js"></script>
+         <script src="Semantic-UI-1.0/dist/semantic.min.js"></script>
+         <link href="css/cdn.css" rel="stylesheet">
+        <title>Register Please!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div id="header">
+            <h1>
+                E-HEALTH AN INITIATIVE BY THE GOVT. OF INDIA
+                <br>
+            </h1>
+        </div>    
+        
+        
+        
+        
+        <div class="same">
+            <form class="ui form" id="register" onsubmit="return validate()">
+            <h4 class="ui dividing header">Registration Page </h4>
+         <div class="field">
+            <label>First Name</label>
+            <input name="fname" type="text" placeholder="First Name" required>
+            <br>
+            <label>Last Name</label>
+            <input name="lname" type="text" placeholder="First Name" required>
+            <div class="two fields">
+                <div class="field">
+                    <label> Street </label>
+                    <input type="text" name="street" placeholder="Street" maxlength="30" required>
+                </div>
+                <!-- end of field division -->
+                <div class="field">
+                    <label> Apt No. </label>
+                    <input type="text" name="aptno" placeholder="#AptNo." maxlength="3" required>
+                </div>
+            <!-- end of field division -->    
+            </div>
+            <!-- end of two fields division -->
+            <div class="field">
+                <label> State </label>
+                <input type="text" name="state" placeholder="State" required>
+            </div>
+            <!-- end of field division -->
+        </div>
+        <!-- end of field division -->   
+            <div class="field">
+                <label> City </label>
+                <input type="text" name="city" placeholder="City" maxlength="10" required>
+            </div>    
+        <!-- end of field division -->
+            <div class="field">
+                <label> Zip Code </label>
+                <input type="text" name="zip" placeholder="Zip Code" maxlength="6" required>
+            </div>
+            <!-- end of field -->
+            <div class="field">
+                <label> Phone </label>
+                <input type="text" name="phone" placeholder="Phone No." maxlength="10" required>
+            </div>
+            <!-- end of field -->
+            <div class="field">
+                <label> E-Mail </label>
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="sex" tabindex="0" class="hidden" required>
+                    <label>Male</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="sex" tabindex="0" class="hidden" required>
+                    <label>Female</label>
+                </div>
+            </div>
+            <!-- end of field division -->
+            <div class="field">
+                <label> D.O.B. </label>
+                <input type="text" name="dob" placeholder="D.O.B." required>
+            </div>
+            <div class="field">
+                <label>Register As </label>
+                <select class="ui fluid search dropdown" required>
+                    <option> Doctor </option>
+                    <option> Citizen </option>
+                    <option> Pathologist </option>
+                    <option> Pharmacist </option>
+                </select> 
+            </div>  
+            <br><br><br><br><br><br>
+            <!--
+            <script>
+                validate();
+            </script>
+            -->
+            <div class="ui buttons">
+                <button class="ui positive button" onclick="return validate()">Submit</button>
+        </form>
+        <!-- end of form -->    
+        </div>
+        <!-- end of same division -->
+        
+        
+        
+        <div id="footer">
+            <a href="about.html">
+                About Us!
+            </a>
+        </div>
+        <!-- end of footer division -->
+    </body>
+</html>

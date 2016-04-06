@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="Semantic-UI-1.0/dist/semantic.min.css" type="text/css">
+        <link rel="stylesheet" href="css/constant.css" type="text/css">
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+         <script src="Semantic-UI-1.0/dist/semantic.min.js"></script>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.3.2/semantic.min.css" rel="stylesheet">
+          <title>E-HEALTH|ACTOR SELECTION PAGE</title>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            $(function(){
+                $('.ui.dropdown').dropdown();
+            });
+         </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div id="header">
+            <h1>
+                E-HEALTH|AN INITIATIVE BY THE GOVT. OF INDIA
+                <br>
+            </h1>
+            <h4>
+                We Care For You,Care From Where You Are
+            </h4> 
+            
+        </div>
+        <div class="container">
+            <form class="ui form">
+                <h4 class="ui dividing header">Doctor's Information</h4>
+          
+                 <div class="field">
+                        <label>Name</label>
+                            <div class="two fields">
+                                <div class="field">
+                                    <input type="text" name="citizen[first-name]" placeholder="First Name">
+                                        </div>
+                                <div class="field">
+                                    <input type="text" name="citizen[last-name]" placeholder="Last Name">
+                                </div>
+                            </div>
+                    </div>
+                <div class="field">
+                    <label> Clinic/Work Address </label>
+                    <textarea></textarea>
+                </div>
+                <div class="field">
+                    <label> License No.</label>
+                    <input type="text" name="license" placeholder="License No.">
+                </div>
+                <div class="field">
+                    <label> E-mail ID</label>
+                    <input type="text" name="email" placeholder="E-mail ID">
+                </div>
+               
+                <div class="field">
+                <label>Mob No.</label>
+                <input type="text" name="mobile" placeholder="Mobile No." maxlength="10">
+            </div> 
+                         <label>Gender</label><br>
+            <div class="ui fluid search simple selection dropdown">
+                <input type="hidden" name="country">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Select Actor</div>
+                    <div class="menu">
+                    <div class="item" data-value="d"><i class="doctor"></i>Doctor</div>
+                    <div class="item" data-value="p"><i class="city"></i>Patient</div>
+                    <div class="item" data-value="ph"><i class="pharmacist"></i>Pharmacist</div>
+                    <div class="item" data-value="pa"><i class="pathologist"></i>Pathologist</div>
+  
+                    </div>
+            </div>
+              <div class="field">
+                <label>D.O.B.</label>
+                <input type="text" name="dob" maxlength="10" placeholder="Date Of Birth">
+            </div>
+             <div class="ui button large">
+                    <button class="ui negative button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+            </div>
+        
+    </body>
+</html>

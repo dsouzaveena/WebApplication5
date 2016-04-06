@@ -1,0 +1,54 @@
+div#header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: rgba(1,113,170,1);
+	padding: 0px;
+        z-index: 7;
+       
+}
+div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#FFFFFF;
+	background-color: rgba(1,113,170,1);
+	padding:8px;
+        z-index: 110;
+       
+}
+#header.ui.right.attached.animated.button{
+    position: absolute;
+    right: 110px;
+    top: 20px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 40%;
+    margin-bottom: 10px;
+    z-index: 110 
+}
+.container1{
+    position: absolute;
+    left:10%;
+    top:50%;
+    z-index: 2
+}
+.videoBg{
+    position: absolute; left: 0;top: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background-size: auto;
+    padding-top:10px;
+}
+.one field{
+    z-index: 10;
+}
+a{
+    color: #FFFFFF;
+}

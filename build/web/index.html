@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="Semantic-UI-1.0/dist/semantic.min.css" type="text/css">
+        <link rel="stylesheet" href="css/constant.css" type="text/css"/>
+        <title>E-HEALTH|AN INITIATIVE BY THE GOVT. OF INDIA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="header">
+            <h1>
+                E-HEALTH AN INITIATIVE BY THE GOVT. OF INDIA
+                <br>
+            </h1>
+            <div class="ui buttons large" style="float: right">
+                <button class="ui negative button" style="float: left" id="login">
+                    LogIn
+                    <script>
+                    document.getElementById("login").onclick = function () {
+                    location.href = "login.html";       
+                    };
+                    </script>
+                </button>
+                
+                <div class = "or">
+                  
+                </div>
+                <button class="ui positive button" style="float:right" id="signup">
+                    Sign Up
+                </button>
+                <script>
+                    document.getElementById("signup").onclick = function () {
+                    location.href = "select_actor.html";
+                    };
+                </script>
+            </div>
+            
+    </div>
+        
+    
+
+        <div class="video" style="position: relative;display: block">
+        <video class="videoBg" id="video" autoplay="" loop="" muted="">
+            <source src="video/Ehealth.mp4" type="video/mp4">
+            Video not supported
+        </video>
+        </div>    
+            
+        <div id="footer">
+            <a href="about.html">
+                About Us!
+            </a>
+        </div>
+    </body>
+</html>

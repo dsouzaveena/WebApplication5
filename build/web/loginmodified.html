@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+	<title>Login</title>
+	<!-- meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+	<!-- css -->
+	<link rel="stylesheet" href="css/login.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	
+</head>
+
+<body>
+	<div class="wrapper">
+	<div class="container-fluid">
+
+	<form role="form" class="form" action="" method="post" autocomplete="on" name="login"onsubmit="return validateLogin()" >
+	<fieldset id="fset1">
+	<h1 id="login">Login</h1>
+	
+	
+	
+	
+	<div class="form-group">
+
+	
+		<label class="sr-only" for="username"></label>
+		<input class="form-control" id="username" type="email"  placeholder="Email " name="email"
+		value autofocus
+		required />	
+		<br>
+	
+	
+		<label class="sr-only" for="password"></label>
+		<input class="form-control" class="input-color" id="password" type="password" placeholder="Password" name="passWord"
+		required /><h4><a href="" id="forgot_password">Forgot Password</a></h4>
+		
+	</div>
+		<span class="span"><input type="checkbox" id="remember_password"><label for="check">Remember Me</label>
+		
+		</span>
+		
+			<!-- drop down list -->
+		<label for="cat"></label>
+		<p><h4>Sign in as</h4>
+		<select class="form-control" id="cat" name="category">
+			<option value="user" >Citizen</option>
+			<option value="doctor">Doctor</option>
+			<option value="pharma">Pharmacist</option>			
+                        <option value="patho"> Pathologist </option>
+		</select>
+                </p>
+		<br>
+		<div id="div_but1">
+		<div id="div_but1_submit">
+		<button class="form-control" class="btn btn-default" id="but1" type="submit">Sign In</button>
+		</div>
+		</div>
+
+	</fieldset>
+
+	</div>
+	</div>	
+	
+</form>
+
+<footer>
+
+</footer>
+	
+	<!-- js -->
+	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/constant.js"></script>
+
+</body>
+
+</html>

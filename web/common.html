@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+     <head>
+        <link rel="stylesheet" href="Semantic-UI-1.0/dist/semantic.min.css" type="text/css">
+        <link rel="stylesheet" href="css/constant1.css" type="text/css">
+         <script src="js/jquery-2.1.4.min.js"></script>
+          <script src="js/constant.js"></script>
+         <script src="Semantic-UI-1.0/dist/semantic.min.js"></script>
+          <link href="css/cdn.css" rel="stylesheet">
+          <title>E-HEALTH|REGISTER</title>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div id="header">
+            <h1>
+                E-HEALTH|AN INITIATIVE BY THE GOVT. OF INDIA
+                <br>
+            </h1>
+            <h4>
+                We Care For You,Care From Where You Are
+            </h4>    
+        </div>
+        <div class="container1">
+            <form class="ui form" name="common">
+                <h4 class="ui dividing header">Tell Us Something About You</h4>
+                <div class="field">
+                        <label> Your Name</label>
+                            <div class="two fields">
+                                <div class="field">
+                                    <input type="text" name="firstname" placeholder="First Name">
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                </div>
+                <div class="field">
+                        <label>Residential Address</label>
+                            <div class="fields">
+                                <div class="twelve wide field">
+                                    <input type="text" name="resaddress" placeholder="Residential Address">
+                                </div>
+                                <div class="four wide field">
+                                    <input type="text" name="shipping[address-2]" placeholder="Apt #">
+                                </div>
+                            </div>
+                </div>
+                <div class="one field">
+                       
+                    <div class="field">
+                        <label>Area</label>
+                            <select class="ui fluid simple dropdown">
+                                <option value="">Area</option>
+                                <option value="A">Andheri</option>
+                                <option value="B">Bandra</option>
+                                <option value="C">Borivali</option>
+                                <option value="D">Dadar</option>
+                                
+                                
+
+                            </select>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Other Information</h4>
+                <div class="fields">
+                    <div class="twelve wide field">
+                        <label>Aadhar Card Number</label>
+                        <input type="text" name="cardno" maxlength="12" placeholder="Card #">
+                    </div>
+                </div>
+                <label>Gender</label><br>
+            <div class="ui fluid selection dropdown">
+                
+                <input type="hidden" name="gender">
+                     <i class="dropdown icon"></i>
+                        <div class="default text">Gender</div>
+                        <div class="menu">
+                            <div class="item" data-value="2">Male</div>
+                            <div class="item" data-value="1">Female</div>
+                            <div class="item" data-value="0">Other</div>
+                        </div>
+            </div>
+            <div class="field">
+                <label>D.O.B.</label>
+                <input type="text" name="dob" maxlength="10" placeholder="Date Of Birth">
+            </div>    
+                    <div class="field">
+                        <label>E-mail</label>
+                            <input type="text" name="email" placeholder="E-mail">
+                    </div>
+                
+            <div class="field">
+                <label>Mob No.</label>
+                <input type="text" name="mobile" placeholder="Mobile No." maxlength="10">
+            </div>
+            <h4 class="ui dividing header">You Are A </h4>
+             <div class="one field" id="selection1">
+                       
+                    <div class="field" id="selection2">
+                        <label>Role</label>
+                            <select class="ui fluid simple dropdown" id="selection3">
+                                <option value="">Actor</option>
+                                <option value="A">Doctor</option>
+                                <option value="B">Citizen</option>
+                                <option value="C">Pharmacist</option>
+                                <option value="D">Pathologist</option>
+                                
+                                
+
+                            </select>
+                        <script>
+                    $(document).ready(function (){
+                        $("selection1.value==A").click(function(){
+                            $("dyn").load("doctor.html");
+                        });
+                    });
+                </script>   
+                    </div>
+                </div>
+            <div id="dyn">
+                 
+            </div>
+            <div class="ui button large">
+                <button class="ui negative button" onclick="ValidateEmail(document.common.email)">
+                    Submit
+                </button>
+            </div>
+        </form>
+        </div>  
+        <script src="js/email-validation.js" ></script>
+    </body>
+</html>
